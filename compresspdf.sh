@@ -1,4 +1,5 @@
 #! /bin/bash
+# Update : 
 # A simple handy script to compresse pdf using ghostscript
 # Update  : V0.1.1 25/10/2015 : Adding subtitile, audio Bite rate 128,
 # Comment : V0.1.2 25/10/2015 : Adding debug
