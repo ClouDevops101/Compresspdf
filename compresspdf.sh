@@ -9,7 +9,7 @@ compresspdf() {
 }
 
 SRC=$1
-find -E $SRC -type f -regex ".*\.(pdf|PDF)$" -exec rename  -e 's/( |,|\)|\()/_/g' {} \;
+find -E $SRC -type f -regex ".*\.(pdf|PDF)$" -exec rename  -e 's/( |,|~|\)|\()/_/g' {} \;
 find -E $SRC -type f -regex ".*\.GHS.pdf$" -exec rename  -e 's/__/_/g' {} \;
 for FILE in  `find -E $SRC -type f -regex ".*\.pdf$" ! \( -name "*.GHS.pdf" \)  `
 	do
