@@ -22,7 +22,7 @@ for FILE in  `find -E $SRC -type f -regex ".*\.pdf$" ! \( -name "*.GHS.pdf" \)  
 		osascript -e 'display notification "Start compressing"'
 	    if [ -e "$DEST_ORIG$filename.GHS.pdf" ]
                 then
-	        mv $FILE /Users/heddar/.Trash/
+	        mv $FILE /Users/$USER/.Trash/
 	        echo "$DEST_ORIG$filename.GHS.pdf" "already exist"
 	        continue
 	    fi
@@ -36,5 +36,5 @@ for FILE in  `find -E $SRC -type f -regex ".*\.pdf$" ! \( -name "*.GHS.pdf" \)  
                 Size_SRC=`du -h "$FILE"`
 		Size_HB=`du -h "$DEST_ORIG$filename.GHS.pdf"`
 		echo -e "Original size : $Size_SRC \nAfter compres : $Size_HB "
-		mv $FILE /Users/heddar/.Trash/
+		mv $FILE /Users/$USER/.Trash/
 	done
