@@ -1,34 +1,40 @@
 
 <a href="http://bitly.com/2grT54q"><img src="https://cdn.codementor.io/badges/i_am_a_codementor_dark.svg" alt="I am a codementor" style="max-width:100%"/></a><a href="http://bitly.com/2grT54q"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ghostscript.svg/1200px-Ghostscript.svg.png" height="50">
 
-## CompressPDF
-  simple handy script to compress pdf using ghostscript
+# CompressPDF
+simple handy shell script to compress pdf using ghostscript lib
+## Description 
+simple handy shell script to compress pdf using ghostscript : 
+ - Reduce BigPDF Files 
+ - optimize the PDF size
 
-# Update  : V0.1.1 25/10/2015 : Adding subtitile, audio Bite rate 128,
-# Comment : V0.1.2 25/10/2015 : Adding debug
-#
+I was able to reduce my 16G library to 11G without losing quality ont the Pdf images
+
 ## Requierement
 
 ### MacOS
-
+```
 brew install ghostscript
-
+```
 ### Linux
-
+```
 yum install ghostscript
-
-### Compile it fro source 
+```
+### Compile it from source 
 
 Please refer to the offical [docuementation](http://ghostscript.com/doc/7.07/Install.htm)
 
 ## Installation
-
+```
 git clone git
 
 cp compresspdf.sh   /usr/local/bin/compresspdf.sh
 chmod +x /usr/local/bin/compresspdf.sh
-
-
+```
 ## Usage
+```
+compresspdf.sh   'PDF_DIRECTORY/'
+```
+Please notice that parsed PDF name will be changed to GHS.pdf : 
 
-compresspdf.sh   DIRECTORY_OF_PDF/
+for example :  alice.pdf -> alice.GHS.pdf
