@@ -1,3 +1,6 @@
+
+<a href="http://bitly.com/2grT54q"><img src="https://cdn.codementor.io/badges/i_am_a_codementor_dark.svg" alt="I am a codementor" style="max-width:100%"/></a><a href="http://bitly.com/2grT54q"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ghostscript.svg/1200px-Ghostscript.svg.png" height="50">
+
 ## CompressPDF
   simple handy script to compress pdf using ghostscript
 
